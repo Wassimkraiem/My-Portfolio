@@ -44,17 +44,14 @@ const ProjectsSection = () => {
 
 	return (
 		<section id='projects'>
-			<h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>
+			<h2 className='text-center text-4xl font-bold text-white mt-4 mb-4 md:mb-8'>
 				My Projects
 			</h2>
-			<div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
-				<ProjectTag
-					onClick={handleTagChange}
-					name='All'
-					isSelected={tag === 'All'}
-				/>
-			</div>
-			<ul ref={ref} className='grid md:grid-cols-3 gap-8 md:gap-12'>
+			<div className='text-white flex flex-row justify-center items-center gap-2 py-6'></div>
+			<ul
+				ref={ref}
+				className='grid md:grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3 2xl:gap-10 gap-2 md:gap-2 lg:gap-2'
+			>
 				{filteredProjects.map((project, index) => (
 					<motion.li
 						key={index}
@@ -68,6 +65,7 @@ const ProjectsSection = () => {
 							description={project.description}
 							image={project.image}
 							link={project.previewUrl}
+							git={project.gitUrl}
 						/>
 					</motion.li>
 				))}
