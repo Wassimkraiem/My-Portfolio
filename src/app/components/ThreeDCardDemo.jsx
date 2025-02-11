@@ -5,7 +5,7 @@ import React from 'react';
 import { CardBody, CardContainer, CardItem } from '../../components/ui/3d-card';
 import Link from 'next/link';
 
-export function ThreeDCardDemo({ title, description, image, link }) {
+export function ThreeDCardDemo({ title, description, image, link, git }) {
 	return (
 		<CardContainer className='inter-var'>
 			<CardBody className='bg-[#181818] relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  '>
@@ -42,6 +42,7 @@ export function ThreeDCardDemo({ title, description, image, link }) {
 						Try now →
 					</CardItem>
 					<CardItem
+						href={`${git}`}
 						translateZ={20}
 						as='button'
 						className='px-4 py-2 rounded-xl  bg-primary-400  dark:bg-white dark:text-black text-white text-xs font-bold'
