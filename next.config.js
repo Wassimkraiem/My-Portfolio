@@ -9,6 +9,9 @@ const nextConfig = {
 			'static.djangoproject.com',
 		],
 	},
+	api: {
+		bodyParser: true, // This is default, but explicitly enabling can solve issues
+	},
 };
 
 module.exports = nextConfig;

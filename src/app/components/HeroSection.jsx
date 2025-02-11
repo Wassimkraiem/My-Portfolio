@@ -28,8 +28,12 @@ const HeroSection = () => {
 						/>
 					</h1>
 					<p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-						voluptuous.
+						Software engineering student at ISSATSO. A hard-worker pationate
+						with new technologies and dev tools. I consider my self as planner
+						and a practical person. And also i’m a solution oriented person who
+						have strong ablity to manage stress and work under pression. I m
+						willing to improve my skills more and more and integrate a company
+						with a vision and intertional vocation.
 					</p>
 					<div>
 						<Link
