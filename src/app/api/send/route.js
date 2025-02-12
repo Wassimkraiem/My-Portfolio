@@ -42,7 +42,7 @@ export async function POST(req, res) {
 
 	const mailOptions = {
 		from: process.env.EMAIL, // Sender email address
-		to: 'wassim.kraiem.ess@gmail.com', // Recipient email address
+		to: email, // Recipient email address
 		subject: subject,
 		text: message, // Plain text message
 		html: `<p>${message}</p>`, // HTML message
