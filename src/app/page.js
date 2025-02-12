@@ -6,6 +6,7 @@ import EmailSection from './components/EmailSection';
 import Footer from './components/Footer';
 import { FloatingDockDemo } from './components/FloatingDockDemo';
 import AchievementsSection from './components/AchievementsSection';
+import { SparklesCore } from '@/components/ui/sparkles';
 
 export default function Home() {
 	return (
@@ -13,7 +14,6 @@ export default function Home() {
 			<Navbar />
 			<div className='container mt-24 mx-auto px-12 py-4'>
 				<HeroSection />
-				{/* <AchievementsSection /> */}
 				<AboutSection />
 				<ProjectsSection />
 				<EmailSection />

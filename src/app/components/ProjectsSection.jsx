@@ -3,6 +3,7 @@ import React, { useState, useRef } from 'react';
 import ProjectTag from './ProjectTag';
 import { motion, useInView } from 'framer-motion';
 import { ThreeDCardDemo } from './ThreeDCardDemo';
+import { SparklesCore } from '@/components/ui/sparkles';
 const projectsData = [
 	{
 		id: 1,
