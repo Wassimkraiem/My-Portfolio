@@ -7,6 +7,7 @@ import React, {
 	useRef,
 	useEffect,
 } from 'react';
+import { BackgroundGradient } from './background-gradient';
 
 const MouseEnterContext = createContext(undefined);
 
@@ -37,28 +38,30 @@ export const CardContainer = ({ children, className, containerClassName }) => {
 		<MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
 			<div
 				className={cn(
-					'py-20 flex items-center justify-center',
+					'py-20 flex items-center justify-center ',
 					containerClassName
 				)}
 				style={{
 					perspective: '1000px',
 				}}
 			>
-				<div
-					ref={containerRef}
-					onMouseEnter={handleMouseEnter}
-					onMouseMove={handleMouseMove}
-					onMouseLeave={handleMouseLeave}
-					className={cn(
-						'flex items-center justify-center relative transition-all duration-200 ease-linear',
-						className
-					)}
-					style={{
-						transformStyle: 'preserve-3d',
-					}}
-				>
-					{children}
-				</div>
+				<BackgroundGradient>
+					<div
+						ref={containerRef}
+						onMouseEnter={handleMouseEnter}
+						onMouseMove={handleMouseMove}
+						onMouseLeave={handleMouseLeave}
+						className={cn(
+							'flex items-center justify-center relative transition-all duration-200 ease-linear',
+							className
+						)}
+						style={{
+							transformStyle: 'preserve-3d',
+						}}
+					>
+						{children}
+					</div>
+				</BackgroundGradient>
 			</div>
 		</MouseEnterContext.Provider>
 	);

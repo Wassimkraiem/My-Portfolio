@@ -6,8 +6,9 @@ import { ThreeDCardDemo } from './ThreeDCardDemo';
 const projectsData = [
 	{
 		id: 1,
-		title: 'React Portfolio Website',
-		description: 'My personal portfolio',
+		title: 'Next js  Portfolio Website',
+		description:
+			'I built my Portfolio website with Nextjs tailwindcss and some components from Aceternity UI',
 		image: '/images/projects/1.png',
 		tag: ['All', 'Web'],
 		gitUrl: '/',
