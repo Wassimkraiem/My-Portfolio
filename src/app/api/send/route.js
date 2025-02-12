@@ -41,8 +41,8 @@ export async function POST(req, res) {
 	});
 
 	const mailOptions = {
-		from: process.env.EMAIL, // Sender email address
-		to: email, // Recipient email address
+		from: email, // Sender email address
+		to: process.env.EMAIL, // Recipient email address
 		subject: subject,
 		text: message, // Plain text message
 		html: `<p>${message}</p>`, // HTML message
