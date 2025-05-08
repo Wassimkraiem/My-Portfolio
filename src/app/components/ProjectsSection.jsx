@@ -32,7 +32,7 @@ const projectsData = [
 		title: 'Advanced Video Search Api',
 		description:
 			'I built this api in my internship to help with the slow search of some saas',
-		stack: 'Flask Dynamodb Opensearch ',
+		stack: 'Flask Dynamodb Opensearch aws-ec2 docker bitbucket',
 		image: '/images/projects/3.png',
 		tag: ['All', 'Web'],
 		gitUrl: '/',
