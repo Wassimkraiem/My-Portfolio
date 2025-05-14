@@ -2,7 +2,6 @@
 import React, { useState, useRef } from 'react';
 import ProjectTag from './ProjectTag';
 import { motion, useInView } from 'framer-motion';
-import { ThreeDCardDemo } from './ThreeDCardDemo';
 import { SparklesCore } from '@/components/ui/sparkles';
 const projectsData = [
 	{
@@ -10,7 +9,7 @@ const projectsData = [
 		title: 'Next js  Portfolio Website',
 		description:
 			'I built my Portfolio website with Nextjs tailwindcss and Shadcn',
-		stack:'Nextjs tailwindcss Shadcn',
+		stack: 'Nextjs tailwindcss Shadcn',
 		image: '/images/projects/1.png',
 		tag: ['All', 'Web'],
 		gitUrl: '/',
@@ -21,7 +20,7 @@ const projectsData = [
 		title: 'The Wild oasis',
 		description:
 			'Cozy yet luxurious cabins, for you to enjoy with you loved ones',
-		stack:'Nextjs tailwindcss Supabase',
+		stack: 'Nextjs tailwindcss Supabase',
 		image: '/images/projects/2.png',
 		tag: ['All', 'Web'],
 		gitUrl: '/https://github.com/Wassimkraiem/the-wild-next',
@@ -32,8 +31,8 @@ const projectsData = [
 		title: 'Advanced Video Search Api',
 		description:
 			'I built this api in my internship to help with the slow search of some saas',
-		stack:'Flask Dynamodb Opensearch ',
-		image: '/',
+		stack: 'Flask Dynamodb Opensearch aws-ec2 docker bitbucket',
+		image: '/images/projects/3.png',
 		tag: ['All', 'Web'],
 		gitUrl: '/',
 		previewUrl: '/',
