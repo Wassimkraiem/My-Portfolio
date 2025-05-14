@@ -2,7 +2,6 @@
 import React, { useTransition, useState } from 'react';
 import Image from 'next/image';
 import TabButton from './TabButton';
-import { FloatingDockDemo } from './FloatingDockDemo';
 
 const TAB_DATA = [
 	{
@@ -102,7 +101,6 @@ const AboutSection = () => {
 					<div className='mt-8'>
 						{TAB_DATA.find((t) => t.id === tab).content}
 					</div>
-					{/* <FloatingDockDemo /> */}
 				</div>
 			</div>
 		</section>
