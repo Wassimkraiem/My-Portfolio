@@ -2,7 +2,7 @@
 import React, { useState, useRef } from 'react';
 import ProjectTag from './ProjectTag';
 import { motion, useInView } from 'framer-motion';
-import { SparklesCore } from '@/components/ui/sparkles';
+import ThreeDCardDemo from "./ThreeDCardDemo"
 const projectsData = [
 	{
 		id: 1,
