@@ -11,8 +11,8 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body className={inter.className}>
-				<div className='w-full absolute inset-0 h-screen'>
-					<SparklesCore
+				{/* <div className='w-full absolute inset-0 h-screen'>
+					 <SparklesCore
 						id='tsparticlesfullpage'
 						background='transparent'
 						minSize={0.6}
@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
 						particleDensity={100}
 						className='w-full h-full'
 						particleColor='#FFFFFF'
-					/>
-				</div>
+					/> 
+				</div> */}
 				{children}
 			</body>
 		</html>
